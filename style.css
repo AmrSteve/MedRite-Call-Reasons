@@ -1,29 +1,86 @@
-h1 {
+.heading h1 {
     text-align: center;
-    color: #01080e;
+    color: rgb(0, 0, 0);
+    /* padding-top: 10%; */
+    font-size: 55px;
+    /* z-index: 2; */
 }
 
-body {
-    background-image: url('./pexels-pixabay-263402.jpg');
-    background-position:center;
-    background-size: auto;
+body{
+    height: 100%;
+    margin: 0;
 }
 
-dropbtn {
-    background-color: #0f7ad1;
-    color: white;
-    padding: 50%;
-    font-size: 16px;
-    border: darkblue;
-    border-top: 20%;
-    border-right: 10%;
-    border-left: 30%;
-    border-bottom: 10%;
-}
+/* .image { 
+    filter: blur(5px);
 
-.dropdown {
+} */
+
+.bg-img {
+    /* The image used */
+    background-image: url("./location-placeholder.jpg");
     
-    display: inline-flexbox;
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    
+    /* Full height */
+    height: 100%;
+    
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* padding: 5%;  */
+    position:sticky;
+  }
+  
+.dropdown-content {
+    /* padding: 10px 12px; */
+    color: #333333;
+    background-color: #eeeeee;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 40%;
+  padding: 20px;
+  text-align: center;
+
+}
+
+.dropdown-content:focus,
+
+.dropdown-content:hover {
+    outline: none;
+    border: 3px solid #bbbbbb;
+    
+
+}
+
+
+
+.dropbtn {
+    padding: 10px 12px;
+    color: #333333;
+    background-color: #eeeeee;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 10%;
+    padding: 20px;
+    text-align: center;
+
 }
 
 

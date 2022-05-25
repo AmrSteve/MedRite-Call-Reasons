@@ -1,11 +1,15 @@
 <html>
     <head>  
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" type="text/css" href="./style.css">
     </head>
     <body>
-    <h1>MedRite Urgent Care Call Reasons</h1>
+    <div class="heading">
+        <h1>MedRite Urgent Care Call Reasons</h1>
+    </div>        
     <div class="dropdown">
-       <a href="#" target="_blank" id="btn"> <button class="dropbtn">Submit</button> </a>
+        <div class="bg-img"></div>
+        <!-- <img src="./location-placeholder.jpg" class="image"> -->
+       <a href="#" target="_blank" id="btn"> <button class="dropbtn" onclick="select_value()">Submit</button> </a>
         <select class="dropdown-content" id="reasons">
          <option value="https://forms.gle/mxaQChnQviQyg6Rr7">Covid Related Call (AHT Included)</option>
          <option value="https://forms.gle/GCvASXrPrNRLZyp18">Urgent Care Related Call</option>
