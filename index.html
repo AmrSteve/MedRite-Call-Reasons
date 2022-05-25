@@ -1,0 +1,27 @@
+<html>
+    <head>  
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+    <h1>MedRite Urgent Care Call Reasons</h1>
+    <div class="dropdown">
+       <a href="#" target="_blank" id="btn"> <button class="dropbtn">Submit</button> </a>
+        <select class="dropdown-content" id="reasons">
+         <option value="https://forms.gle/mxaQChnQviQyg6Rr7">Covid Related Call (AHT Included)</option>
+         <option value="https://forms.gle/GCvASXrPrNRLZyp18">Urgent Care Related Call</option>
+        </select>
+      </div>
+      <script>
+          function select_value() {
+              var select = document.getElementById("reasons").value
+              var button = document.getElementById("btn")
+
+              button.setAttribute("href",select)
+
+          }
+            select_value()
+
+    </script>
+    </body>
+
+</html>
